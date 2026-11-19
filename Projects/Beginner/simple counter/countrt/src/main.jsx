@@ -1,8 +1,17 @@
-import './style.css'
-import heroImg from './assets/hero.png'
-import javascriptLogo from './assets/javascript.svg'
-import viteLogo from './assets/vite.svg'
-import { setupCounter } from './counter.js'
+// import './style.css'
+// import heroImg from './assets/hero.png'
+// import javascriptLogo from './assets/javascript.svg'
+// import viteLogo from './assets/vite.svg'
+// import { setupCounter } from './counter.jsx'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import Counter from './counter.jsx'
+
+ReactDOM.createRoot(document.getElementById('app')).render(
+  <React.StrictMode>
+    <Counter />
+  </React.StrictMode>,
+)
 
 document.querySelector('#app').innerHTML = `
 <section id="center">
